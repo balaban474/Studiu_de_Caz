@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importanța Utilizării Aplicațiilor de Lucru în Echipă: Git și GitHub</title>
+    <style>
+        /* Reset și font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1abc9c;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        p, ul, ol {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 1em;
+            color: #555;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .card {
+            background: #fafafa;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        /* Buton */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #16a085;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Importanța Utilizării Aplicațiilor de Lucru în Echipă: Git și GitHub</h1>
+
+        <div class="card">
+            <h2>1. Ce este Git și GitHub?</h2>
+            <p><strong>Git</strong> este un sistem de control al versiunilor care permite echipelor să gestioneze și să urmărească modificările din codul sursă al unui proiect. <strong>GitHub</strong> este o platformă de colaborare care utilizează Git pentru a facilita lucrul în echipă, găzduind codul, oferind un mediu de lucru comun și un spațiu de partajare a modificărilor în timp real.</p>
+        </div>
+
+        <div class="card">
+            <h2>2. Beneficiile Utilizării Git și GitHub în Lucrul la Proiecte Comune</h2>
+            <ul>
+                <li><strong>Controlul versiunilor</strong>: Permite urmărirea tuturor modificărilor și revenirea la versiuni anterioare ale codului, dacă este necesar.</li>
+                <li><strong>Colaborare eficientă</strong>: GitHub permite membrilor echipei să lucreze simultan la diferite funcționalități, folosind ramuri separate.</li>
+                <li><strong>Transparență și vizibilitate</strong>: Toți membrii echipei pot vedea ce modificări sunt făcute și de către cine, facilitând o comunicare mai clară.</li>
+                <li><strong>Automatizarea testelor</strong>: GitHub se integrează cu sisteme de CI/CD (Continuous Integration/Continuous Deployment) care permit rularea automată a testelor.</li>
+                <li><strong>Documentare și organizare</strong>: Funcționalitățile de issue tracking și Wiki din GitHub permit organizarea ideilor, problemelor și îmbunătățirilor pentru proiect.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Caracteristicile Cheie ale Git și GitHub</h2>
+            <h3>3.1 Branching (Ramificarea)</h3>
+            <p>Permite crearea de ramuri separate pentru a dezvolta noi funcționalități fără a afecta codul principal. Odată finalizate, aceste ramuri pot fi integrate prin <em>merge</em>.</p>
+
+            <h3>3.2 Pull Requests</h3>
+            <p>Un <strong>Pull Request</strong> permite echipelor să revizuiască codul înainte de a-l integra în ramura principală. Este o metodă eficientă de a verifica codul și de a asigura calitatea proiectului.</p>
+
+            <h3>3.3 Issue Tracking (Gestionarea Problemelor)</h3>
+            <p>În GitHub, echipele pot crea <strong>issues</strong> (probleme) pentru a discuta și a rezolva problemele întâlnite. Acestea ajută la prioritizarea sarcinilor și la monitorizarea progresului.</p>
+
+            <h3>3.4 Wiki și Documentație</h3>
+            <p>GitHub oferă o secțiune Wiki pentru documentarea proiectului, oferind informații esențiale pentru membri și facilitând înțelegerea proiectului.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Pașii de Utilizare a Git și GitHub în Proiecte Comune</h2>
+            <ol>
+                <li><strong>Crearea unui repository</strong>: Începe prin a crea un repository pe GitHub unde va fi stocat codul sursă.</li>
+                <li><strong>Clonarea repository-ului</strong>: Fiecare membru clonează repository-ul pentru a lucra pe o copie locală.</li>
+                <li><strong>Crearea unei ramuri</strong>: Pentru fiecare funcționalitate nouă, creează o nouă ramură pentru a evita modificarea codului principal.</li>
+                <li><strong>Adăugarea și commit-ul modificărilor</strong>: Fiecare modificare trebuie adăugată și comisă pentru a fi salvată în istoria proiectului.</li>
+                <li><strong>Push către GitHub</strong>: După ce modificările sunt testate, trimite-le către repository-ul de pe GitHub.</li>
+                <li><strong>Crearea unui pull request</strong>: Deschide un pull request pentru a cere o revizuire a codului de către ceilalți membri ai echipei.</li>
+                <li><strong>Revizuirea și integrarea modificărilor</strong>: După aprobare, schimbările pot fi integrate în ramura principală.</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Ghid Git și GitHub pentru lucrul în echipă. Toate drepturile rezervate.</p>
+        </footer>
+    </div>
+</body>
+</html>
